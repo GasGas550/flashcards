@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div id="loading">Загрузка карточек...</div>
+        
+        <div id="card-container" class="card-container" style="display: none;">
+            <div class="card" id="card">
+                <div class="card-face card-front" id="card-term">
+                    </div>
+                <div class="card-face card-back" id="card-definition">
+                    </div>
+            </div>
+        </div>
+
+        <div id="controls" style="display: none;">
+            <button id="flip-button">Перевернуть</button>
+            <button id="next-button">Следующая</button>
+        </div>
+
+        <div id="no-cards" style="display: none;">
+            <h2>У вас пока нет карточек</h2>
+            <p>Добавьте их в чате с ботом, используя команду /add, а потом вернитесь сюда.</p>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
